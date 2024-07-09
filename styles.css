@@ -1,43 +1,48 @@
-body {
-    font-family: 'Arial', sans-serif;
+body, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: #f8f9fa;
-    color: #333;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .header {
     background-color: #343a40;
     color: #ffffff;
     padding: 15px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .container {
     width: 90%;
     margin: 0 auto;
     max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
     font-size: 28px;
     margin: 0;
-    display: inline-block;
 }
 
 nav {
-    float: right;
+    display: flex;
 }
 
 .nav-links {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    gap: 15px;
 }
 
 .nav-links li {
-    display: inline;
-    margin: 0 15px;
+    margin: 0;
 }
 
 .nav-links a {
@@ -47,47 +52,10 @@ nav {
     font-size: 16px;
 }
 
-.hero {
-    background: url('https://source.unsplash.com/1600x900/?poker') no-repeat center center/cover;
-    color: #ffffff;
-    text-align: center;
-    padding: 120px 0;
-    position: relative;
-}
-
-.hero::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+#globeViz {
     width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
-    z-index: 1;
-}
-
-.hero h2, .hero p, .cta-button {
+    height: 100vh;
     position: relative;
-    z-index: 2;
-}
-
-.hero h2 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 24px;
-    margin-bottom: 30px;
-}
-
-.cta-button {
-    background-color: #dc3545;
-    color: #ffffff;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 5px;
 }
 
 .features {
@@ -126,8 +94,8 @@ nav {
 .call-to-action {
     background-color: #343a40;
     color: #ffffff;
-    text-align: center;
     padding: 60px 0;
+    text-align: center;
 }
 
 .call-to-action h2 {
@@ -138,6 +106,15 @@ nav {
 .call-to-action p {
     font-size: 20px;
     margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #dc3545;
+    color: #ffffff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
 }
 
 .footer {
@@ -151,4 +128,3 @@ nav {
     margin: 0;
     font-size: 14px;
 }
-

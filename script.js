@@ -46,3 +46,12 @@ myGlobe.scene().add(light);
 
 const ambientLight = new THREE.AmbientLight(0x404040);
 myGlobe.scene().add(ambientLight);
+
+document.querySelectorAll('.language-button').forEach(button => {
+  button.addEventListener('click', () => {
+      const lang = button.getAttribute('data-lang');
+      // Implement language change logic here, e.g., load language files or switch content dynamically
+      alert('Language switched to: ' + lang);
+  });
+});
+

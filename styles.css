@@ -129,21 +129,37 @@ nav {
     font-size: 14px;
 }
 
-/* Deals Page Styles */
-.deals {
-    background-color: #f8f9fa;
+/* Tools Section */
+.tools {
+    background-color: #ffffff;
     padding: 60px 0;
     text-align: center;
 }
 
-.deals-list {
+.tools .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tools h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.tools p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.tools-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
 
-.deal {
+.tool {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -151,109 +167,38 @@ nav {
     width: 300px;
 }
 
-.deal h3 {
+.tool h3 {
     font-size: 22px;
     color: #343a40;
     margin-bottom: 10px;
 }
 
-.deal p {
+.tool p {
     font-size: 16px;
     color: #6c757d;
     margin-bottom: 15px;
 }
 
-/* Reviews Page Styles */
-.reviews {
+/* Localization Section */
+.localization {
     background-color: #f8f9fa;
     padding: 60px 0;
     text-align: center;
 }
 
-.reviews-list {
+.language-switcher {
     display: flex;
-    flex-wrap: wrap;
+    gap: 10px;
     justify-content: center;
-    gap: 20px;
 }
 
-.review {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 300px;
-}
-
-.review h3 {
-    font-size: 22px;
-    color: #343a40;
-    margin-bottom: 10px;
-}
-
-.review p {
-    font-size: 16px;
-    color: #6c757d;
-    margin-bottom: 15px;
-}
-
-/* Contact Page Styles */
-.contact {
-    background-color: #f8f9fa;
-    padding: 60px 0;
-    text-align: center;
-}
-
-.contact form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-}
-
-.contact label {
-    font-size: 18px;
-    color: #343a40;
-}
-
-.contact input, .contact textarea {
-    width: 100%;
-    max-width: 500px;
-    padding: 10px;
-    border: 1px solid #ced4da;
+.language-button {
+    background-color: #dc3545;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
     font-size: 16px;
 }
 
-.contact textarea {
-    height: 150px;
-    resize: none;
-}
-
-/* Sign Up Page Styles */
-.signup {
-    background-color: #f8f9fa;
-    padding: 60px 0;
-    text-align: center;
-}
-
-.signup form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-}
-
-.signup label {
-    font-size: 18px;
-    color: #343a40;
-}
-
-.signup input {
-    width: 100%;
-    max-width: 500px;
-    padding: 10px;
-    border: 1px solid #ced4da;
-    border-radius: 5px;
-    font-size: 16px;
-}

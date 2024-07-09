@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+}
+
+.header {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?poker') no-repeat center center/cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+.hero h2, .hero p, .cta-button {
+    position: relative;
+    z-index: 2;
+}
+
+.cta-button {
+    background-color: #dc3545;
+    color: #ffffff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 2;
+}
+
+.features, .deals, .reviews, .contact, .signup {
+    background-color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.feature, .deal, .review {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+}
+
+.feature h3, .deal h3, .review h3 {
+    font-size: 24px;
+    color: #343a40;
+}
+
+.feature p, .deal p, .review p {
+    font-size: 16px;
+    color: #6c757d;
+}
+
+.call-to-action {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.call-to-action h2 {
+    font-size: 36px;
+    margin: 0 0 20px;
+}
+
+.call-to-action p {
+    font-size: 20px;
+    margin: 0 0 20px;
+}
+
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin: 5px 0 15px;
+    width: 300px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #dc3545;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
